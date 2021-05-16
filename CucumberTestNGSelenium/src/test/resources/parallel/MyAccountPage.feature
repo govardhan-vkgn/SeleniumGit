@@ -5,11 +5,13 @@ Given user has already logged in to application
 |	username	|	password	|
 |	govardhan.vkgn@gmail.com	|	Jaya@143	|
 
+@accounts
 Scenario: Accounts page title
 Given user is on accounts page
 When user gets title of the page
 Then page title should be "My account - My Store"
 
+@accounts
 Scenario: Accounts section count
 Given user is on accounts page
 Then user gets accounts section 
