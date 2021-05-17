@@ -5,9 +5,7 @@ import org.testng.annotations.DataProvider;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-//Govardhan
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty",
@@ -16,13 +14,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 				"rerun:target/failedrun.txt"
 			},
 			glue = {"parallel"},
-			features = {"src/test/resources/parallel"}	
+			features = {"@target/failedrun.txt"}	
 		)
-
-public class ParallelRun extends AbstractTestNGCucumberTests{
-	@Override
-	@DataProvider(parallel=true)
-	public Object[][] scenarios(){
-		return super.scenarios();
-	}
+public class FailedRun {
+	
 }
