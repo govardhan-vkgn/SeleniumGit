@@ -16,7 +16,8 @@ public class LoginPageSteps {
 	@Given("user is on Login page")
 	public void user_is_on_login_page() {
 	    DriverFactory.getDriver()
-	    	.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+	    	.get("https://www.google.com/recaptcha/api2/demo?invisible=false");
+	    //http://automationpractice.com/index.php?controller=authentication&back=my-account
 	}
 	
 	@When("user gets title of the page")

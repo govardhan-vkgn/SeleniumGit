@@ -16,7 +16,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 				"rerun:target/failedrun.txt"
 			},
 			glue = {"parallel"},
-			features = {"src/test/resources/parallel"}	
+			features = {"src/test/resources/parallel/Captcha.feature"}	
 		)
 
 public class ParallelRun extends AbstractTestNGCucumberTests{
